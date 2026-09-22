@@ -1,0 +1,64 @@
+.welcome-section {
+  .content-container {
+    grid-template-columns: 4fr 7fr;
+    gap: 1rem;
+
+    .banner-img {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      img {
+        object-fit: cover;
+        max-width: 22rem;
+        height: min-content;
+      }
+
+      &:first-child {
+        padding-bottom: 2rem;
+      }
+    }
+
+    .lawyer-block {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      padding: 1.75rem 0 2.25rem;
+    }
+
+    .btns-block {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 1rem;
+      align-items: center;
+
+      button {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+
+        // font-size: clamp(1rem, 5vw, 1.1rem);
+        // padding: clamp(1rem, 5vw, 1.2rem) clamp(2rem, 5vw, 3.5rem);
+      }
+    }
+  }
+}
+
+@media all and (max-width: 900px) {
+  .welcome-section {
+    .content-container {
+      .banner-img {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .welcome-section {
+    .content-container {
+      gap: 0;
+    }
+  }
+}

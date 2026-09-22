@@ -1,0 +1,21 @@
+// base
+@import "./base/reset";
+@import "./base/fonts";
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/global";
+
+// layout
+@import "./layout/header";
+@import "./layout/main/welcome";
+@import "./layout/main/explore";
+@import "./layout/main/results";
+@import "./layout/main/partners";
+@import "./layout/main/history";
+@import "./layout/main/reviews";
+@import "./layout/main/speakers";
+@import "./layout/main/consult";
+@import "./layout/main/appoinment";
+@import "./layout/main/blog";
+@import "./layout/footer";
+@import "./layout/animation";

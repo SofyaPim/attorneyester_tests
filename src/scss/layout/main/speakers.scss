@@ -1,0 +1,135 @@
+.speakers-section {
+  background-color: var(--white-color);
+
+  h2 {
+    text-align: center;
+    color: var(--dark-bg-color);
+  }
+
+  h2:nth-child(1) {
+    padding-top: clamp(3rem, 5vw, 50rem);
+  }
+
+  p {
+    color: var(--light-gray-for-white);
+    text-align: center;
+  }
+
+  h4 {
+    color: var(--light-gray-for-white);
+  }
+
+  a {
+    text-decoration: none;
+    padding-bottom: 0;
+  }
+
+  a:hover {
+    svg {
+      path {
+        fill: var(--yellow-color);
+      }
+    }
+  }
+
+  .speakers-container {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1.5rem;
+  }
+
+  .speaker-card {
+    //  max-width: 21.5rem;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      background-color: var(--white-color);
+      position: relative;
+      width: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 100%;
+      padding: 2%;
+      margin-top: 10%;
+
+      p:nth-of-type(1) {
+        font-family: Cormorant-Light, serif;
+        font-weight: 300;
+        color: var(--dark-bg-color);
+        font-size: clamp(1rem, 4vw, 1.5rem);
+      }
+
+      p:nth-of-type(2) {
+        color: var(--yellow-color);
+        font-size: clamp(0.7rem, 4vw, 1rem);
+      }
+
+      .social-block {
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 1rem;
+        position: absolute;
+        top: -38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        background-color: var(--white-color);
+        opacity: 0;
+        transition: opacity ease-in-out 0.6s;
+      }
+
+      .social-block::after {
+        position: absolute;
+        content: "";
+        background-color: var(--yellow-color);
+        width: 90%;
+        height: 1px;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    figcaption:hover {
+      cursor: pointer;
+
+      .social-block {
+        opacity: 1;
+      }
+    }
+  }
+
+  .splide__slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .splide__arrows {
+    position: absolute;
+    z-index: 77;
+    top: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button.splide__arrow {
+    //  background: none;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+
+    svg {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}

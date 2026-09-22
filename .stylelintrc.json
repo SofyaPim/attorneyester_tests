@@ -1,0 +1,18 @@
+{
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-prettier"
+  ],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
+    "stylelint-config-recommended-scss"
+  ],
+  "rules": {
+    "color-hex-alpha": "never",
+    "prettier/prettier": true,
+    "media-feature-range-notation": "prefix",
+    "selector-class-pattern": false
+  },
+  "ignoreFiles": ["src/scss/libs/*"]
+}

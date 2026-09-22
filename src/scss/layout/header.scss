@@ -1,0 +1,216 @@
+.header-section {
+  background-color: var(--dark-bg-color);
+
+  .common-block {
+    background-image: image-set(
+      ("/src/img/webp/banner-bg2X.webp") type("image/webp"),
+      ("/src/img/banner/banner-bg2X.jpg") type("image/jpeg")
+    );
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .content-container {
+    h1 {
+      padding: 0.7rem 0 1rem;
+    }
+
+    p {
+      color: var(--yellow-color);
+      padding-bottom: 1.4rem;
+    }
+  }
+
+  // .header-contianer {
+  //   padding: 0 2rem;
+  // }
+
+  .header-contianer {
+    padding: 2rem 0 1rem;
+  }
+
+  a {
+    font-family: Outfit-Regular, sans-serif;
+    color: var(--white-color);
+    text-decoration: none;
+    transition: all ease-in 0.3s;
+  }
+
+  #header-button {
+    font-family: Outfit-Regular, sans-serif;
+    font-size: clamp(0.7rem, 3vw, 1.1rem);
+    padding: clamp(0.5rem, 3vw, 1.2rem) clamp(1rem, 3vw, 3.5rem);
+  }
+
+  .logo-contianer {
+    @include df-jcsb;
+
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+
+    img {
+      width: 100%;
+      max-width: 20rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  .desktop-nav {
+    position: static;
+    left: 0;
+    height: auto;
+    border-top: 1px solid var(--gray-color);
+    border-bottom: 1px solid var(--gray-color);
+    padding: 1.3rem 0 0.3rem;
+
+    @include df-jcsb;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        padding-bottom: 1rem;
+      }
+
+      li:not(li:last-child) {
+        margin-right: 2.75rem;
+      }
+    }
+  }
+
+  .desktop-nav.active {
+    left: 0; /* Показываем меню */
+  }
+
+  .contacts-block {
+    display: flex;
+
+    .contacts-item {
+      @include df-center;
+
+      min-width: 12.4rem;
+
+      img {
+        margin-right: 0.5rem;
+      }
+
+      p:first-child {
+        color: var(--yellow-color);
+        line-height: 1.45rem;
+      }
+    }
+  }
+
+  .burger {
+    display: none;
+
+    // display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 3; /* Убедитесь, что бургер выше навигации */
+  }
+
+  .burger .line {
+    width: 30px; /* Увеличиваем ширину линий для лучшего вида */
+    height: 4px; /* Увеличиваем высоту линий для лучшего вида */
+    background-color: var(--yellow-color);
+    margin: 4px 0;
+    transition: all 0.3s ease; /* Плавный переход для линий */
+  }
+
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 12px); /* Верхняя линия */
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0; /* Средняя линия исчезает */
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -10px); /* Нижняя линия */
+  }
+}
+
+// @media all and (max-width: 900px) {
+//   .header-section {
+//     .content-container {
+//       display: flex;
+//       flex-direction: column;
+//     }
+//   }
+// }
+
+@media all and (max-width: 770px) {
+  #header-button {
+    position: fixed;
+    top: 0;
+    left: -100%;
+  }
+
+  #header-button.active {
+    top: 1rem;
+    left: 1rem;
+    transition: left 0.3s ease;
+    z-index: 99;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .header-section {
+    .logo-contianer {
+      justify-content: space-between;
+      padding-bottom: 0;
+      width: 100%;
+      gap: 2rem;
+      flex-wrap: nowrap;
+    }
+
+    .logo-contianer img {
+      max-width: 10rem;
+      padding-bottom: 0;
+    }
+
+    .desktop-nav {
+      position: fixed;
+      top: 0;
+      left: -100%; /* Скрываем меню за пределами экрана */
+      width: 100%;
+      height: 100%;
+      background-color: var(--trans-dark-bg); /* Полупрозрачный фон */
+      transition: left 0.3s ease; /* Плавный переход */
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    .burger {
+      display: flex;
+    }
+  }
+}
+
+@media all and (max-width: 700px) {
+  .header-section {
+    .desktop-nav {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .header-section {
+    .header-contianer {
+      padding: 1rem 0;
+    }
+  }
+}

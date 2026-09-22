@@ -1,0 +1,189 @@
+@font-face {
+  font-family: Cormorant-SemiBoldItalic;
+  src:
+    url("/src/fonts/CormorantGaramond-SemiBoldItalic.woff2") format("woff2"),
+    url("/src/fonts/CormorantGaramond-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Cormorant-BoldItali;
+  src:
+    url("/src/fonts/CormorantGaramond-BoldItalic.woff2") format("woff2"),
+    url("/src/fonts/CormorantGaramond-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Cormorant-Bold;
+  src:
+    url("/src/fonts/CormorantGaramond-Bold.woff2") format("woff2"),
+    url("/src/fonts/CormorantGaramond-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Cormorant-Light;
+  src:
+    url("/src/fonts/CormorantGaramond-Light.woff2") format("woff2"),
+    url("/src/fonts/CormorantGaramond-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Cormorant-Medium;
+  src:
+    url("/src/fonts/CormorantGaramond-Medium.woff2") format("woff2"),
+    url("/src/fonts/CormorantGaramond-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Cormorant-MediumItalic;
+  src:
+    url("/src/fonts/CormorantGaramond-MediumItalic.woff2") format("woff2"),
+    url("/src/fonts/CormorantGaramond-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Cormoran-Regular;
+  src:
+    url("/src/fonts/CormorantGaramond-Regular.woff2") format("woff2"),
+    url("/src/fonts/CormorantGaramond-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Cormorant-Italic;
+  src:
+    url("/src/fonts/CormorantGaramond-Italic.woff2") format("woff2"),
+    url("/src/fonts/CormorantGaramond-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Cormorant-LightItalic;
+  src:
+    url("/src/fonts/CormorantGaramond-LightItalic.woff2") format("woff2"),
+    url("/src/fonts/CormorantGaramond-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src:
+    url("/src/fonts/CormorantGaramond-SemiBold.woff2") format("woff2"),
+    url("/src/fonts/CormorantGaramond-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit-ExtraBold;
+  src:
+    url("/src/fonts/Outfit-ExtraBold.woff2") format("woff2"),
+    url("/src/fonts/Outfit-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit-Bold;
+  src:
+    url("/src/fonts/Outfit-Bold.woff2") format("woff2"),
+    url("/src/fonts/Outfit-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit-Regular;
+  src:
+    url("/src/fonts/Outfit-Regular.woff2") format("woff2"),
+    url("/src/fonts/Outfit-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit-SemiBold;
+  src:
+    url("/src/fonts/Outfit-SemiBold.woff2") format("woff2"),
+    url("/src/fonts/Outfit-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit-ExtraLight;
+  src:
+    url("/src/fonts/Outfit-ExtraLight.woff2") format("woff2"),
+    url("/src/fonts/Outfit-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit-Black;
+  src:
+    url("/src/fonts/Outfit-Black.woff2") format("woff2"),
+    url("/src/fonts/Outfit-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit-Medium;
+  src:
+    url("/src/fonts/Outfit-Medium.woff2") format("woff2"),
+    url("/src/fonts/Outfit-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit-Light;
+  src:
+    url("/src/fonts/Outfit-Light.woff2") format("woff2"),
+    url("/src/fonts/Outfit-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit-Thin;
+  src:
+    url("/src/fonts/Outfit-Thin.woff2") format("woff2"),
+    url("/src/fonts/Outfit-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}

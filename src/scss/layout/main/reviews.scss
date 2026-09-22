@@ -1,0 +1,78 @@
+.reviews-section {
+  //   background-color: var(--white-color);
+
+  .reviews-container {
+    //  display: grid;
+    //  grid-template-columns: repeat(auto-fill, minmax(15.65rem, 1fr));
+    //  grid-template-rows: 1fr;
+    //  grid-gap: 1.5rem;
+
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: scroll;
+  }
+
+  .review-card {
+    min-width: 15rem;
+  }
+
+  .avatar-block {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .review {
+    background-color: var(--review-card-bg);
+    padding: clamp(2rem, 5vw, 3.5rem) clamp(1rem, 5vw, 2rem);
+  }
+
+  .review-card:nth-child(odd) {
+    .avatar-block {
+      padding-top: 1rem;
+    }
+
+    .review {
+      border-bottom-left-radius: 1rem;
+    }
+  }
+
+  .review-card:nth-child(even) {
+    .avatar-block {
+      padding-bottom: 1rem;
+    }
+
+    .review {
+      border-top-left-radius: 1rem;
+    }
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .reviews-section {
+    .container {
+      padding: 0;
+
+      .heading-center-block {
+        h2 {
+          padding: 0 0.5rem;
+          text-align: center;
+        }
+      }
+    }
+
+    .reviews-container {
+      background-color: var(--review-card-bg);
+      border-radius: 0;
+      padding: clamp(2rem, 5vw, 3.5rem) 0;
+    }
+
+    .review-card {
+      margin: 0 2rem;
+    }
+
+    .review {
+      padding: 0;
+    }
+  }
+}

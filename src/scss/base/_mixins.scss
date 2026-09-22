@@ -1,0 +1,65 @@
+@mixin df-jcsb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin df-c-jcsb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin df-aifs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+@mixin df-center {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin df-fdc-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin df-r-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+// @mixin size-px-to-vh($width, $height, $templateHeight: 864) {
+//   width: calc($height / $templateHeight) * calc($width / $height) * 100vh;
+//   height: calc($height / $templateHeight) * 100vh;
+// }
+
+// @mixin size-px-to-dvh($width, $height, $templateHeight: 864) {
+//   width: calc($height / $templateHeight) * calc($width / $height) * 100dvh;
+//   height: calc($height / $templateHeight) * 100dvh;
+// }
+
+// @mixin size-px-to-vw($width, $height, $templateWidth: 1920) {
+//   width: calc($width / $templateWidth) * 100vw;
+//   height: calc($width / $templateWidth) * calc($height / $width) * 100vw;
+// }
+
+// // with min-height
+// @mixin size-px-adaptive-to-vh($width, $height, $templateHeight: 864) {
+//   width: calc($height / $templateHeight) * calc($width / $height) * 100vh;
+//   min-height: calc($height / $templateHeight) * 100vh;
+// }
+
+// @mixin size-px-adaptive-to-vw($width, $height, $templateWidth: 1920) {
+//   width: calc($width / $templateWidth) * 100vw;
+//   min-height: calc($width / $templateWidth) * calc($height / $width) * 100vw;
+// }

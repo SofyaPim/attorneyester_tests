@@ -1,0 +1,11 @@
+@function px-to-vh($value, $screenHeight: 864) {
+  @return calc($value / $screenHeight) * 100vh;
+}
+
+@function px-to-dvh($value, $screenHeight: 864) {
+  @return calc($value / $screenHeight) * 100dvh;
+}
+
+@function px-to-vw($value, $screenWidth: 1920) {
+  @return calc($value / $screenWidth) * 100vw;
+}

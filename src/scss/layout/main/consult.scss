@@ -1,0 +1,61 @@
+.consult-section {
+  a {
+    text-decoration: none;
+  }
+
+  .container {
+    padding-top: clamp(2rem, 5vw, 7rem);
+    padding-bottom: clamp(2rem, 5vw, 7rem);
+
+    .content-container {
+      gap: 4rem;
+    }
+  }
+
+  .yellow-button {
+    margin-top: clamp(1rem, 5vw, 2rem);
+  }
+
+  .banner-phone {
+    background-color: var(--white-color);
+    padding: clamp(1rem, 3vw, 2rem);
+
+    h3 {
+      color: var(--dark-bg-color);
+    }
+
+    p {
+      color: var(--light-gray-for-white);
+      padding: 0.6rem 0 1.5rem;
+    }
+  }
+
+  .banner-phone > div {
+    padding: clamp(1rem, 5vw, 3rem) clamp(0.5rem, 5vw, 1rem);
+    border: 0.75rem solid var(--light-gray-color);
+  }
+
+  .contacts-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    img {
+      width: 14%;
+    }
+  }
+
+  .contacts-item a {
+    font-size: clamp(0.8rem, 5vw, 1.5rem);
+  }
+
+  .contacts-item p,
+  .contacts-item a {
+    color: var(--dark-bg-color);
+    padding: 0;
+  }
+
+  .contacts-item a:hover {
+    color: var(--yellow-color);
+  }
+}

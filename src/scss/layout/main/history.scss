@@ -1,0 +1,111 @@
+.history-section {
+  background-color: var(--dark-bg-color);
+
+  .container {
+    background-image: image-set(
+      url("/src/img/webp/history-bg_1x.webp") 1x type("image/webp"),
+      url("/src/img/webp/history-bg_2x.webp") 2x type("image/webp"),
+      url("/src/img/history/history-bg_1x.jpg") 1x type("image/jpeg"),
+      url("/src/img/history/history-bg_2x.jpg") 2x type("image/jpeg")
+    );
+    background-size: cover;
+    background-position: center;
+    padding-top: clamp(2.5rem, 5vw, 7rem);
+    padding-bottom: clamp(2.5rem, 5vw, 7rem);
+  }
+
+  .container-items {
+    background-color: var(--trans-dark-bg);
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: 1fr;
+    place-items: flex-start center;
+  }
+
+  .img-center img {
+    width: 100%;
+    height: auto;
+    visibility: visible;
+    object-fit: cover;
+    padding: clamp(0rem, 5vw, 4rem) 0;
+  }
+
+  .img-center.mob {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+
+  .stat-block .desc > p {
+    color: var(--white-color);
+    line-height: 2rem;
+  }
+
+  .stat-block .desc {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+
+  .stat-block > img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .stat-block:nth-child(1) {
+    padding-top: 2rem;
+  }
+
+  .content-block {
+    padding: clamp(1rem, 5vw, 4rem) 0.5rem;
+    min-width: 15rem;
+  }
+
+  .content-block:first-child div {
+    padding-bottom: 1.5rem;
+  }
+
+  .content-block:first-child div p:first-child {
+    color: var(--yellow-color);
+    padding-bottom: 0.7rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .history-section {
+    .container-items {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0.4fr 1fr;
+    }
+
+    .img-center img {
+      padding: 0;
+    }
+
+    .img-center.desktop {
+      width: 0;
+      height: 0;
+      visibility: hidden;
+    }
+
+    .img-center.mob {
+      width: 100%;
+      height: auto;
+      visibility: visible;
+    }
+  }
+}
+
+@media all and (max-width: 440px) {
+  .history-section {
+    .container {
+      padding: 0;
+    }
+
+    .container-items {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0.2fr 0.9fr;
+    }
+  }
+}

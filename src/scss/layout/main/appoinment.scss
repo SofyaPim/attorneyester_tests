@@ -1,0 +1,109 @@
+.appoinment-section {
+  .container {
+    background-image: image-set(
+      url("/src/img/webp/appoint_bg_1x.webp") 1x type("image/webp"),
+      url("/src/img/webp/appoint_bg_2x.webp") 2x type("image/webp"),
+      url("/src/img/appointment/appoint_bg_1x.jpg") 1x type("image/jpeg"),
+      url("/src/img/appointment/appoint_bg_2x.jpg") 2x type("image/jpeg")
+    );
+    background-size: cover;
+    background-position: center;
+    padding-top: clamp(2.5rem, 5vw, 7rem);
+    padding-bottom: clamp(2.5rem, 5vw, 7rem);
+  }
+
+  .appoinment-form {
+    background-color: var(--dark-bg-color);
+    padding: clamp(2.5rem, 5vw, 9rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    input {
+      width: 100%;
+      background: none;
+      border: none;
+      border-bottom: 1px solid var(--light-gray-for-white);
+      color: var(--white-color);
+      padding: 1rem;
+    }
+
+    input:valid {
+      border-bottom: 1px solid var(--light-gray-for-white);
+    }
+
+    .is-invalid {
+      border: 1px solid var(--alert-color);
+    }
+
+    //  input:invalid:required {
+    //    border: 1px solid var(--alert-color);
+    //  }
+
+    input[type="submit"] {
+      font-family: Outfit-Regular, sans-serif;
+      padding: clamp(1rem, 5vw, 1.2rem) clamp(2rem, 5vw, 3.5rem);
+      background-color: var(--white-color);
+      border: 1px solid var(--white-color);
+      width: max-content;
+      color: var(--dark-bg-color);
+      font-size: clamp(1rem, 5vw, 1.1rem);
+      transition: background-color ease-in-out 0.6s;
+    }
+
+    input[type="submit"]:hover {
+      cursor: pointer;
+      background-color: var(--dark-bg-color);
+      border: 1px solid var(--white-color);
+      color: var(--white-color);
+    }
+  }
+
+  #email-error,
+  #name-error,
+  #phone-error {
+    color: var(--alert-color);
+    position: absolute;
+    font-family: Outfit-Regular, sans-serif;
+    line-height: normal;
+    font-size: clamp(0.5rem, 5vw, 0.7rem);
+  }
+
+  #success-message {
+    color: var(--yellow-color);
+    position: absolute;
+  }
+
+  label {
+    position: relative;
+  }
+
+  label,
+  .appoinment-form div {
+    width: 100%;
+  }
+
+  .appoinment-form div {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .appoinment-section {
+    .appoinment-form div {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .appoinment-section {
+    .container {
+      padding: 2rem 0;
+    }
+  }
+}
