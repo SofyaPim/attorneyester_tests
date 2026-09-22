@@ -12,7 +12,7 @@
     "color-hex-alpha": "never",
     "prettier/prettier": true,
     "media-feature-range-notation": "prefix",
-    "selector-class-pattern": false
+    "selector-class-pattern": "^[a-z][a-zA-Z0-9_-]*$"
   },
   "ignoreFiles": ["src/scss/libs/*"]
 }
